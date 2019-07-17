@@ -38,21 +38,35 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "../sass/_variables.scss";
+@import "../sass/_breakpoints.scss";
 @import "../sass/_typography.scss";
 
 .talent-list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   padding: $pad*2;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  @include bp(3) {
+    flex-direction: row;
+  }
 }
 
 .talent-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 200px;
   background: rebeccapurple;
+
+  @include bp(3) {
+    width: 50%;
+    height: 250px;
+  }
 
   &.anderson-wright {
     background: url('../assets/anderson-wright.png');
@@ -79,5 +93,9 @@ export default {
 .talent-link span {
   @include display();
   font-size: 20px;
+
+  @include bp(3) {
+    font-size: 32px;
+  }
 }
 </style>

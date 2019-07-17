@@ -16,9 +16,12 @@
 @import "./sass/_typography.scss";
 // @import "./sass/_breakpoints.scss";
 
+body {
+  background: $black;
+}
+
 #app {
   color: $white;
-  background-color: $black;
 }
 
 #nav {
