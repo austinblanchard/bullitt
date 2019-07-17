@@ -13,7 +13,7 @@
 @import "./sass/resets/_company.scss";
 @import "./sass/resets/_meyer-reset.scss";
 @import "./sass/_variables.scss";
-// @import "./sass/_typography.scss";
+@import "./sass/_typography.scss";
 // @import "./sass/_breakpoints.scss";
 
 #app {
@@ -22,10 +22,13 @@
 }
 
 #nav {
+  @include franklin();
   text-align: center;
+  text-transform: uppercase;
 
   .nav-title {
     padding: $pad;
+    font-size: 24px;
   }
 }
 

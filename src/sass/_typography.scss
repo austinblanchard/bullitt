@@ -6,7 +6,16 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'franklin';
+  src: url('~@/fonts/ITCFranklinGothicStd-Med.woff2') format('woff2'),
+      url('~@/fonts/ITCFranklinGothicStd-Med.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $display: 'display', sans-serif;
+$franklin: 'franklin', sans-serif;
 
 /** FONT MIXINS **/
 @mixin display() {
@@ -15,4 +24,10 @@ $display: 'display', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
+@mixin franklin() {
+  font-family: $franklin;
+  font-style: normal;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+}
 

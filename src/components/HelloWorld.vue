@@ -79,5 +79,6 @@ export default {
 
 .talent-link span {
   @include display();
+  font-size: 20px;
 }
 </style>
