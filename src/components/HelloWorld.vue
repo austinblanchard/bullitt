@@ -1,7 +1,7 @@
 <template>
   <div class="talent-grid">
 
-    <a class="talent-link anderson-wright" href="">
+    <!-- <a class="talent-link anderson-wright" href="">
       <span>first lastname</span>
     </a>
     <a class="talent-link anthony-leonardi" href="">
@@ -12,26 +12,27 @@
     </a>
     <a class="talent-link" href="">
       <span>first lastname</span>
-    </a>
+    </a> -->
 
 
-    <!-- <router-link class="" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+    <router-link class="" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
       test
-    </router-link> -->
+    </router-link>
+
   </div>
 </template>
 
 <script>
-import talents from '../talent.json';
+import talents from '../talent.json'
 
 export default {
   name: 'HelloWorld',
-  
-  // data() {
-  //   return {
-  //     talent: talents.find(talent => talent.slug === this.$route.params.talentSlug)
-  //   };
-  // }
+
+  data () {
+    return {
+      talent: talents.find(talent => talent.slug === this.$route.params.talentSlug)
+    }
+  }
 
 }
 </script>
