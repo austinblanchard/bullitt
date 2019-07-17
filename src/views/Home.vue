@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="title">Talent</div>
+    <HelloWorld />
   </div>
 </template>
 
@@ -16,3 +16,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+@import "../sass/_typography.scss";
+.title {
+  @include display();
+  text-align: center;
+}
+</style>
