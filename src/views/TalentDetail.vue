@@ -1,5 +1,29 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="talent-detail">
+    <TalentVideo />
   </div>
 </template>
+
+<script>
+// @ is an alias to /src
+import TalentVideo from '@/components/TalentVideo.vue'
+
+export default {
+  name: 'TalentDetail',
+  components: {
+    TalentVideo
+  }
+}
+</script>
+
+<style lang="scss">
+// @import "../sass/_typography.scss";
+// @import "../sass/_variables.scss";
+
+// .title {
+//   @include display();
+//   text-align: center;
+//   font-size: 46px;
+//   padding: $pad*2;
+// }
+</style>

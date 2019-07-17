@@ -1,22 +1,20 @@
 <template>
-  <div class="talent-grid">
+  <div class="talent-list">
 
-    <!-- <a class="talent-link anderson-wright" href="">
+    <router-link class="talent-link anderson-wright" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
       <span>first lastname</span>
-    </a>
-    <a class="talent-link anthony-leonardi" href="">
-      <span>first lastname</span>
-    </a>
-    <a class="talent-link candice-vernon" href="">
-      <span>first lastname</span>
-    </a>
-    <a class="talent-link" href="">
-      <span>first lastname</span>
-    </a> -->
+    </router-link>
 
+    <router-link class="talent-link anthony-leonardi" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+      <span>first lastname</span>
+    </router-link>
 
-    <router-link class="" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
-      test
+    <router-link class="talent-link candice-vernon" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+      <span>first lastname</span>
+    </router-link>
+
+    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+      <span>first lastname</span>
     </router-link>
 
   </div>
@@ -26,7 +24,7 @@
 import talents from '../talent.json'
 
 export default {
-  name: 'HelloWorld',
+  name: 'TalentList',
 
   data () {
     return {
@@ -42,7 +40,7 @@ export default {
 @import "../sass/_variables.scss";
 @import "../sass/_typography.scss";
 
-.talent-grid {
+.talent-list {
   display: flex;
   flex-direction: column;
   width: 100%;
