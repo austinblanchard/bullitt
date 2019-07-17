@@ -4,13 +4,17 @@
     "talent": "Anderson Wright",
     "slug": "anderson-wright",
     "thumb": "path to file",
-    "video": "video url"
+    "video": "video url",
+    "title": "video title",
+    "subtitle": "video subtitle"
   },
   {
     "id": 2,
     "talent": "Anthony Leonardi",
     "slug": "anthony-leonardi",
     "thumb": "path to file",
-    "video": "video url"
+    "video": "video url",
+    "title": "video title",
+    "subtitle": "video subtitle"
   }
 ]
