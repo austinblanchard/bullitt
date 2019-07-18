@@ -6,37 +6,37 @@
       <span>Anderson Wright</span>
     </router-link>
 
-    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'anthony-leonardi' }}">
       <div class="bg-image-overlay anthony-leonardi"></div>
       <span>Anthony Leonardi</span>
     </router-link>
 
-    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'candice-vernon' }}">
       <div class="bg-image-overlay candice-vernon"></div>
       <span>Candice Vernon</span>
     </router-link>
 
-    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'drake-doremus' }}">
       <div class="bg-image-overlay drake-doremus"></div>
       <span>Drake Doremus</span>
     </router-link>
 
-    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'justin-lin' }}">
       <div class="bg-image-overlay justin-lin"></div>
       <span>Justin Lin</span>
     </router-link>
 
-    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'larry-charles' }}">
       <div class="bg-image-overlay larry-charles"></div>
       <span>Larry Charles</span>
     </router-link>
 
-    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'matt-ogens' }}">
       <div class="bg-image-overlay matt-ogens"></div>
       <span>Matt Ogens</span>
     </router-link>
 
-    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'peyton-wilson' }}">
       <div class="bg-image-overlay peyton-wilson"></div>
       <span>Peyton Wilson</span>
     </router-link>

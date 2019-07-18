@@ -3,8 +3,7 @@
     "id": 1,
     "name": "Anderson Wright",
     "slug": "anderson-wright",
-    "thumb": "path to file",
-    "video": "306676681",
+    "video": "54079987",
     "title": "Anderson Wright's Project",
     "subtitle": "A bit more about Anderson Wright's awesome project"
   },
@@ -12,9 +11,56 @@
     "id": 2,
     "name": "Anthony Leonardi",
     "slug": "anthony-leonardi",
-    "thumb": "path to file",
-    "video": "video url",
+    "video": "206593703",
     "title": "Anthony Leonardi's Project",
     "subtitle": "A bit more about Anthony Leonardi's awesome project"
+  },
+  {
+    "id": 3,
+    "name": "Candice Vernon",
+    "slug": "candice-vernon",
+    "video": "153257331",
+    "title": "Candice Vernon's Project",
+    "subtitle": "A bit more about Candice Vernon's awesome project"
+  },
+  {
+    "id": 4,
+    "name": "Drake Doremus",
+    "slug": "drake-doremus",
+    "video": "168647601",
+    "title": "Drake Doremus' Project",
+    "subtitle": "A bit more about Drake Doremus' awesome project"
+  },
+  {
+    "id": 5,
+    "name": "Justin Lin",
+    "slug": "justin-lin",
+    "video": "141527449",
+    "title": "Justin Lin's Project",
+    "subtitle": "A bit more about Justin Lin's awesome project"
+  },
+  {
+    "id": 6,
+    "name": "Larry Charles",
+    "slug": "larry-charles",
+    "video": "122516056",
+    "title": "Larry Charles's Project",
+    "subtitle": "A bit more about Larry Charles's awesome project"
+  },
+  {
+    "id": 7,
+    "name": "Matt Ogens",
+    "slug": "matt-ogens",
+    "video": "106181759",
+    "title": "Matt Ogens's Project",
+    "subtitle": "A bit more about Matt Ogens's awesome project"
+  },
+  {
+    "id": 8,
+    "name": "Peyton Wilson",
+    "slug": "peyton-wilson",
+    "video": "106182242",
+    "title": "Peyton Wilson's Project",
+    "subtitle": "A bit more about Peyton Wilson's awesome project"
   }
 ]
