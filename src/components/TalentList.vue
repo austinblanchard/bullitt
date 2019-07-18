@@ -68,6 +68,11 @@ export default {
 
   @include bp(3) {
     flex-direction: row;
+    padding: $pad*4;
+  }
+
+  @include bp(4) {
+    padding: $pad*6;
   }
 }
 

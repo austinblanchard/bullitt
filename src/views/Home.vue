@@ -20,11 +20,17 @@ export default {
 <style lang="scss">
 @import "../sass/_typography.scss";
 @import "../sass/_variables.scss";
+@import "../sass/_breakpoints.scss";
 
 .title {
   @include display();
   text-align: center;
   font-size: 46px;
-  padding: $pad*2;
+  padding-top: $pad*2;
+
+  @include bp(3) {
+    font-size: 72px;
+    padding-top: $pad*3;
+  }
 }
 </style>
