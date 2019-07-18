@@ -2,19 +2,35 @@
   <div class="talent-list">
 
     <router-link class="talent-link anderson-wright" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
-      <span>first lastname</span>
+      <span>Anderson Wright</span>
     </router-link>
 
     <router-link class="talent-link anthony-leonardi" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
-      <span>first lastname</span>
+      <span>Anthony Leonardi</span>
     </router-link>
 
     <router-link class="talent-link candice-vernon" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
-      <span>first lastname</span>
+      <span>Candice Vernon</span>
     </router-link>
 
-    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
-      <span>first lastname</span>
+    <router-link class="talent-link drake-doremus" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+      <span>Drake Doremus</span>
+    </router-link>
+
+    <router-link class="talent-link justin-lin" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+      <span>Justin Lin</span>
+    </router-link>
+
+    <router-link class="talent-link larry-charles" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+      <span>Larry Charles</span>
+    </router-link>
+
+    <router-link class="talent-link matt-ogens" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+      <span>Matt Ogens</span>
+    </router-link>
+
+    <router-link class="talent-link peyton-wilson" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+      <span>Peyton Wilson</span>
     </router-link>
 
   </div>
@@ -84,6 +100,41 @@ export default {
 
   &.candice-vernon {
     background: url('../assets/candice-vernon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &.drake-doremus {
+    background: url('../assets/drake-doremus.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &.justin-lin {
+    background: url('../assets/justin-lin.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &.larry-charles {
+    background: url('../assets/larry-charles.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &.matt-ogens {
+    background: url('../assets/matt-ogens.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &.peyton-wilson {
+    background: url('../assets/peyton-wilson.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
