@@ -3,7 +3,6 @@
 
     <div class="video-relative-wrapper">
       <div class="talent-name">Talent <span>{{ talent.name }}</span></div>
-      <!-- <div class="close">Talent <span>{{ talent.name }}</span></div> -->
       <router-link class="close" to="/">X</router-link>
 
       <vimeo-player
@@ -42,6 +41,15 @@ export default {
 @import "../sass/_variables.scss";
 @import "../sass/_typography.scss";
 
+.talent-video {
+  @include bp(3) {
+    padding: 0 $pad*6;
+  }
+  @include bp(4) {
+    padding: 0 $pad*8;
+  }
+}
+
 .talent-name {
   @include franklin();
   text-transform: uppercase;
@@ -53,9 +61,10 @@ export default {
   }
 
   @include bp(4) {
-    transform: rotate(-90deg) translateY(-50%);
+    // this moves the text into the middle of the edge, rotates it -90deg from the center point, and also positions it vertically centered
+    transform: translateY(-50%) translateX(-50%) rotate(-90deg);
     position: absolute;
-    left: -50px;
+    left: -37px;
     top: 50%;
   }
 }
@@ -64,15 +73,17 @@ export default {
   @include franklin();
   text-transform: uppercase;
   text-align: center;
-  margin-top: $pad;
+  margin: $pad 0;
 
   @include bp(4) {
-    transform: rotate(-90deg) translateY(-50%);
+    // this moves the text into the middle of the edge, rotates it -90deg from the center point, and also positions it vertically centered
+    transform: translateY(-50%) translateX(-50%) rotate(-90deg);
     position: absolute;
-    right: 25px;
+    right: -50px;
     top: 50%;
+
     visibility: hidden;
-    margin-top: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,25 +135,8 @@ h3 {
   max-width: 1400px;
   margin: 0 auto;
 
-  @include bp(3) {
-    padding: 0 $pad*6;
-  }
   @include bp(4) {
-    padding: 0 $pad*8;
     position: relative;
   }
 }
-
-// .vimeo {
-//   // max-width: 1400px;
-//   // margin: 0 auto;
-
-//   // @include bp(3) {
-//   //   padding: 0 $pad*6;
-//   // }
-//   // @include bp(4) {
-//   //   padding: 0 $pad*8;
-//   //   position: relative;
-//   // }
-// }
 </style>
