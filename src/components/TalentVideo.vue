@@ -100,7 +100,11 @@ export default {
 }
 
 .meta {
-  padding: $pad $pad $pad*4;
+  padding: $pad*2 $pad $pad*4;
+
+  @include bp(4) {
+    padding-top: $pad*4;
+  }
 }
 
 h2 {

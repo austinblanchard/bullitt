@@ -88,6 +88,10 @@ export default {
     width: 50%;
     height: 250px;
   }
+
+  @include bp(4) {
+    height: 280px;
+  }
 }
 
 .talent-link:hover .bg-image-overlay,
@@ -100,6 +104,9 @@ export default {
   width: 100%;
   height: 100%;
   transition: transform 500ms ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   &::before {
     content: "";
@@ -112,59 +119,35 @@ export default {
   }
 
   &.anderson-wright {
-    background: url('../assets/anderson-wright.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url('../assets/anderson-wright.jpg');
   }
 
   &.anthony-leonardi {
-    background: url('../assets/anthony-leonardi.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url('../assets/anthony-leonardi.jpg');
   }
 
   &.candice-vernon {
-    background: url('../assets/candice-vernon.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url('../assets/candice-vernon.jpg');
   }
 
   &.drake-doremus {
-    background: url('../assets/drake-doremus.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url('../assets/drake-doremus.jpg');
   }
 
   &.justin-lin {
-    background: url('../assets/justin-lin.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url('../assets/justin-lin.jpg');
   }
 
   &.larry-charles {
-    background: url('../assets/larry-charles.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url('../assets/larry-charles.jpg');
   }
 
   &.matt-ogens {
-    background: url('../assets/matt-ogens.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url('../assets/matt-ogens.jpg');
   }
 
   &.peyton-wilson {
-    background: url('../assets/peyton-wilson.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url('../assets/peyton-wilson.jpg');
   }
 }
 

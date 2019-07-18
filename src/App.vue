@@ -88,6 +88,7 @@ body {
 
     @include bp(4) {
       font-size: 42px;
+      padding-bottom: $pad*4;
     }
   }
 }
