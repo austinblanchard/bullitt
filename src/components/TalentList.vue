@@ -1,35 +1,43 @@
 <template>
   <div class="talent-list">
 
-    <router-link class="talent-link anderson-wright" :to="{ name: 'talent', params: { talentSlug: 'anderson-wright' }}">
+    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'anderson-wright' }}">
+      <div class="bg-image-overlay anderson-wright"></div>
       <span>Anderson Wright</span>
     </router-link>
 
-    <router-link class="talent-link anthony-leonardi" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+      <div class="bg-image-overlay anthony-leonardi"></div>
       <span>Anthony Leonardi</span>
     </router-link>
 
-    <router-link class="talent-link candice-vernon" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+      <div class="bg-image-overlay candice-vernon"></div>
       <span>Candice Vernon</span>
     </router-link>
 
-    <router-link class="talent-link drake-doremus" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+      <div class="bg-image-overlay drake-doremus"></div>
       <span>Drake Doremus</span>
     </router-link>
 
-    <router-link class="talent-link justin-lin" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+      <div class="bg-image-overlay justin-lin"></div>
       <span>Justin Lin</span>
     </router-link>
 
-    <router-link class="talent-link larry-charles" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+      <div class="bg-image-overlay larry-charles"></div>
       <span>Larry Charles</span>
     </router-link>
 
-    <router-link class="talent-link matt-ogens" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+      <div class="bg-image-overlay matt-ogens"></div>
       <span>Matt Ogens</span>
     </router-link>
 
-    <router-link class="talent-link peyton-wilson" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+    <router-link class="talent-link" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+      <div class="bg-image-overlay peyton-wilson"></div>
       <span>Peyton Wilson</span>
     </router-link>
 
@@ -70,16 +78,39 @@ export default {
 }
 
 .talent-link {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 220px;
-  background: rebeccapurple;
+  overflow: hidden;
 
   @include bp(3) {
     width: 50%;
     height: 250px;
+  }
+}
+
+.talent-link:hover .bg-image-overlay,
+.talent-link:focus .bg-image-overlay {
+  transform: scale(1.03);
+}
+
+.bg-image-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 500ms ease;
+
+  &::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
   &.anderson-wright {
@@ -140,8 +171,14 @@ export default {
 }
 
 .talent-link span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   @include display();
   font-size: 20px;
+  width: 100%;
+  text-align: center;
 
   @include bp(3) {
     font-size: 32px;
