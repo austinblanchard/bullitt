@@ -56,11 +56,12 @@ export default {
   width: 100%;
   padding: $pad*2;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 450px;
 
   @include bp(3) {
     flex-direction: row;
     padding: $pad*4;
+    max-width: 1200px;
   }
 
   @include bp(4) {
@@ -73,7 +74,7 @@ export default {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 200px;
+  height: 220px;
   background: rebeccapurple;
 
   @include bp(3) {
@@ -82,14 +83,14 @@ export default {
   }
 
   &.anderson-wright {
-    background: url('../assets/anderson-wright.png');
+    background: url('../assets/anderson-wright.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   &.anthony-leonardi {
-    background: url('../assets/anthony-leonardi.png');
+    background: url('../assets/anthony-leonardi.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -103,7 +104,7 @@ export default {
   }
 
   &.drake-doremus {
-    background: url('../assets/drake-doremus.png');
+    background: url('../assets/drake-doremus.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

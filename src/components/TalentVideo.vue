@@ -98,6 +98,10 @@ h2 {
   @include bp(2) {
     font-size: 32px;
   }
+
+  @include bp(4) {
+    font-size: 36px;
+  }
 }
 
 h3 {
@@ -110,12 +114,16 @@ h3 {
   @include bp(2) {
     font-size: 18px;
   }
+
+  @include bp(4) {
+    font-size: 22px;
+  }
 }
 
 .video-relative-wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  
+
   @include bp(3) {
     padding: 0 $pad*6;
   }

@@ -14,7 +14,7 @@
 @import "./sass/resets/_meyer-reset.scss";
 @import "./sass/_variables.scss";
 @import "./sass/_typography.scss";
-// @import "./sass/_breakpoints.scss";
+@import "./sass/_breakpoints.scss";
 
 body {
   background: $black;
@@ -33,6 +33,15 @@ body {
   .nav-title {
     padding: $pad;
     font-size: 24px;
+
+    @include bp(2) {
+      padding: $pad*2;
+      font-size: 36px;
+    }
+
+    @include bp(3) {
+      font-size: 44px;
+    }
   }
 }
 
