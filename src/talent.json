@@ -4,9 +4,9 @@
     "talent": "Anderson Wright",
     "slug": "anderson-wright",
     "thumb": "path to file",
-    "video": "video url",
-    "title": "video title",
-    "subtitle": "video subtitle"
+    "video": "306676681",
+    "title": "Anderson Wright's Project",
+    "subtitle": "A bit more about Anderson Wright's awesome project"
   },
   {
     "id": 2,
@@ -14,7 +14,7 @@
     "slug": "anthony-leonardi",
     "thumb": "path to file",
     "video": "video url",
-    "title": "video title",
-    "subtitle": "video subtitle"
+    "title": "Anthony Leonardi's Project",
+    "subtitle": "A bit more about Anthony Leonardi's awesome project"
   }
 ]

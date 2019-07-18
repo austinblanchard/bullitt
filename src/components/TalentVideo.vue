@@ -5,10 +5,15 @@
         class="vimeo"
         ref="player"
         :options="{ responsive: true }"
-        :video-id="306676681"
+        :video-id="talent.video"
         :autoplay="true"
       ></vimeo-player>
 
+    <div class="meta">
+      <h2>{{ talent.title }}</h2>
+      <h3>{{ talent.subtitle }}</h3>
+    </div>
+    
   </div>
 </template>
 
@@ -20,20 +25,40 @@ export default {
     
   data () {
     return {
-      talent: talents.find(talent => talent.slug === this.$route.params.talentSlug),
-      options: { responsive: true },
+      talent: talents.find(talent => talent.slug === this.$route.params.talentSlug)
     }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.vimeo {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
+@import "../sass/_breakpoints.scss";
+@import "../sass/_variables.scss";
+@import "../sass/_typography.scss";
+
+.meta {
+  padding: $pad $pad $pad*4;
+}
+
+h2 {
+  @include display();
+  text-align: center;
+  font-size: 20px;
+
+  @include bp(2) {
+    font-size: 32px;
+  }
+}
+
+h3 {
+  @include display();
+  color: $gray;
+  text-align: center;
+  font-size: 14px;
+  margin-top: $pad;
+
+  @include bp(2) {
+    font-size: 18px;
+  }
 }
 </style>
