@@ -28,13 +28,13 @@
 
 <script>
 export default {
-    name: 'app',
+  name: 'app',
 
-    data() {
-        return {
-            nav_is_open: false,
-        }
+  data () {
+    return {
+      nav_is_open: false
     }
+  }
 }
 
 </script>
@@ -128,7 +128,7 @@ body {
   &.nav-open {
     //
     .line {
-      // 
+      //
       &.one {
         transform: translate(0, -50%) rotate(45deg);
         margin-top: 0;

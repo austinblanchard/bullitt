@@ -18,7 +18,7 @@
       <h2>{{ talent.title }}</h2>
       <h3>{{ talent.subtitle }}</h3>
     </div>
-    
+
   </div>
 </template>
 
@@ -27,7 +27,7 @@ import talents from '../talent.json'
 
 export default {
   name: 'TalentVideo',
-    
+
   data () {
     return {
       talent: talents.find(talent => talent.slug === this.$route.params.talentSlug)
@@ -89,7 +89,7 @@ export default {
     align-items: center;
 
     &:after {
-      content:'CLOSE'; 
+      content:'CLOSE';
       visibility: visible;
       display: block;
       position: absolute;
