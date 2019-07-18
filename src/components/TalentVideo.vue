@@ -108,7 +108,7 @@ export default {
 }
 
 h2 {
-  @include display();
+  @include gt-bold();
   text-align: center;
   font-size: 20px;
 
@@ -122,7 +122,7 @@ h2 {
 }
 
 h3 {
-  @include display();
+  @include gt-medium();
   color: $gray;
   text-align: center;
   font-size: 14px;

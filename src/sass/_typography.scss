@@ -1,7 +1,23 @@
 @font-face {
-  font-family: 'display';
+  font-family: 'gt-super';
   src: url('~@/fonts/GT-Super-Display-Super.woff2') format('woff2'),
       url('~@/fonts/GT-Super-Display-Super.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gt-bold';
+  src: url('~@/fonts/GT-Super-Display-Bold.woff2') format('woff2'),
+      url('~@/fonts/GT-Super-Display-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gt-medium';
+  src: url('~@/fonts/GT-Super-Display-Medium.woff2') format('woff2'),
+      url('~@/fonts/GT-Super-Display-Medium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,12 +30,26 @@
   font-style: normal;
 }
 
-$display: 'display', sans-serif;
+$gtSuper: 'gt-super', sans-serif;
+$gtBold: 'gt-bold', sans-serif;
+$gtMedium: 'gt-medium', sans-serif;
 $franklin: 'franklin', sans-serif;
 
 /** FONT MIXINS **/
-@mixin display() {
-  font-family: $display;
+@mixin gt-super() {
+  font-family: $gtSuper;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin gt-bold() {
+  font-family: $gtBold;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin gt-medium() {
+  font-family: $gtMedium;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
 }

@@ -22,7 +22,7 @@ export default {
 @import "../sass/_breakpoints.scss";
 
 .title {
-  @include display();
+  @include gt-super();
   text-align: center;
   font-size: 46px;
   padding-top: $pad*2;
