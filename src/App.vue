@@ -1,7 +1,7 @@
 <template>
   <div id="app" :class="{ 'nav-open': nav_is_open }">
     <div id="nav">
-      <div class="nav-title">Bullitt</div>
+      <router-link class="nav-title" to="/">Bullitt</router-link>
 
       <div class="menu" :class="{ 'nav-open': nav_is_open }" @click="nav_is_open = !nav_is_open">
         <div class="line one"></div>
