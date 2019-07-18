@@ -26,6 +26,7 @@ body {
 
 #nav {
   @include franklin();
+  font-weight: 600;
   text-align: center;
   text-transform: uppercase;
 

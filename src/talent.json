@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "talent": "Anderson Wright",
+    "name": "Anderson Wright",
     "slug": "anderson-wright",
     "thumb": "path to file",
     "video": "306676681",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "talent": "Anthony Leonardi",
+    "name": "Anthony Leonardi",
     "slug": "anthony-leonardi",
     "thumb": "path to file",
     "video": "video url",

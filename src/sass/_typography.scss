@@ -27,7 +27,6 @@ $franklin: 'franklin', sans-serif;
 @mixin franklin() {
   font-family: $franklin;
   font-style: normal;
-  font-weight: 600;
   -webkit-font-smoothing: antialiased;
 }
 
