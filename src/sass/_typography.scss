@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'display';
-    src: url('~@/fonts/GT-Super-Display-Super.woff2') format('woff2'),
-        url('~@/fonts/GT-Super-Display-Super.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'display';
+  src: url('~@/fonts/GT-Super-Display-Super.woff2') format('woff2'),
+      url('~@/fonts/GT-Super-Display-Super.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -19,9 +19,9 @@ $franklin: 'franklin', sans-serif;
 
 /** FONT MIXINS **/
 @mixin display() {
-    font-family: $display;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
+  font-family: $display;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
 }
 
 @mixin franklin() {

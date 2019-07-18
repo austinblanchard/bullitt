@@ -2,12 +2,10 @@
   <div id="app" :class="{ 'nav-open': nav_is_open }">
     <div id="nav">
       <router-link class="nav-title" to="/" @click.native="nav_is_open = false">Bullitt</router-link>
-
       <div class="menu" :class="{ 'nav-open': nav_is_open }" @click="nav_is_open = !nav_is_open">
         <div class="line one"></div>
         <div class="line two"></div>
       </div>
-      
     </div>
 
     <nav class="side-nav" :class="{ 'nav-open': nav_is_open }">
@@ -25,7 +23,6 @@
     <div class="overlay" :class="{ 'nav-open': nav_is_open }">
       <router-view/>
     </div>
-    
   </div>
 </template>
 
@@ -60,6 +57,7 @@ body {
 
 #app {
   position: relative;
+  overflow: hidden;
   min-height: 100%;
   color: $white;
 
@@ -149,7 +147,6 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: right;
-
   padding-right: $pad*4;
   background: transparent;
 
@@ -172,6 +169,10 @@ body {
     @include franklin();
     text-transform: uppercase;
     font-size: 22px;
+
+    &.router-link-exact-active {
+      color: $gray;
+    }
 
     @include bp(2) {
       font-size: 24px;
@@ -220,15 +221,4 @@ body {
     z-index: 1;
   }
 }
-
-// #nav {
-//   padding: 30px;
-//   a {
-//     font-weight: bold;
-//     color: #2c3e50;
-//     &.router-link-exact-active {
-//       color: #42b983;
-//     }
-//   }
-// }
 </style>

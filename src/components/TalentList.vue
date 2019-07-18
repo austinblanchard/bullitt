@@ -46,12 +46,10 @@
 
 <script>
 export default {
-  name: 'TalentList',
-
+  name: 'TalentList'
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "../sass/_variables.scss";
 @import "../sass/_breakpoints.scss";

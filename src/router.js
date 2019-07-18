@@ -16,7 +16,7 @@ export default new Router({
     {
       path: '/:talentSlug',
       name: 'talent',
-      component: () => import(/* webpackChunkName: "client" */ './views/TalentDetail.vue')
+      component: () => import(/* webpackChunkName: "talent" */ './views/TalentDetail.vue')
     }
   ]
 })

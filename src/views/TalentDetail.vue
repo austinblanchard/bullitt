@@ -14,15 +14,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-// @import "../sass/_typography.scss";
-// @import "../sass/_variables.scss";
-
-// .title {
-//   @include display();
-//   text-align: center;
-//   font-size: 46px;
-//   padding: $pad*2;
-// }
-</style>
