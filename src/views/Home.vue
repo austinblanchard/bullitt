@@ -28,13 +28,17 @@ export default {
   font-size: 46px;
   padding-top: $pad*2;
 
+  @include bp(2) {
+    font-size: 54px;
+  }
+
   @include bp(3) {
     font-size: 72px;
     padding-top: $pad*3;
   }
 
   @include bp(4) {
-    font-size: 80px;
+    font-size: 94px;
     padding-top: $pad*4;
   }
 }

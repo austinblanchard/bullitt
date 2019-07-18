@@ -36,11 +36,15 @@ body {
 
     @include bp(2) {
       padding: $pad*2;
-      font-size: 36px;
+      font-size: 32px;
     }
 
     @include bp(3) {
-      font-size: 44px;
+      font-size: 36px;
+    }
+
+    @include bp(4) {
+      font-size: 42px;
     }
   }
 }
