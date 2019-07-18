@@ -1,7 +1,7 @@
 <template>
   <div id="app" :class="{ 'nav-open': nav_is_open }">
     <div id="nav">
-      <router-link class="nav-title" to="/">Bullitt</router-link>
+      <router-link class="nav-title" to="/" @click.native="nav_is_open = false">Bullitt</router-link>
 
       <div class="menu" :class="{ 'nav-open': nav_is_open }" @click="nav_is_open = !nav_is_open">
         <div class="line one"></div>
@@ -11,15 +11,15 @@
     </div>
 
     <nav class="side-nav" :class="{ 'nav-open': nav_is_open }">
-      <router-link class="nav-link" to="/">Home</router-link>
-      <router-link class="nav-link" to="/anderson-wright">Anderson Wright</router-link>
-      <router-link class="nav-link" to="/anthony-leonardi">Anthony Leonardi</router-link>
-      <router-link class="nav-link" to="/candice-vernon">Candice Vernon</router-link>
-      <router-link class="nav-link" to="/drake-doremus">Drake Doremus</router-link>
-      <router-link class="nav-link" to="/justin-lin">Justin Lin</router-link>
-      <router-link class="nav-link" to="/larry-charles">Larry Charles</router-link>
-      <router-link class="nav-link" to="/matt-ogens">Matt Ogens</router-link>
-      <router-link class="nav-link" to="/peyton-wilson">Peyton Wilson</router-link>
+      <router-link class="nav-link" to="/" @click.native="nav_is_open = false">Home</router-link>
+      <router-link class="nav-link" to="/anderson-wright" @click.native="nav_is_open = false">Anderson Wright</router-link>
+      <router-link class="nav-link" to="/anthony-leonardi" @click.native="nav_is_open = false">Anthony Leonardi</router-link>
+      <router-link class="nav-link" to="/candice-vernon" @click.native="nav_is_open = false">Candice Vernon</router-link>
+      <router-link class="nav-link" to="/drake-doremus" @click.native="nav_is_open = false">Drake Doremus</router-link>
+      <router-link class="nav-link" to="/justin-lin" @click.native="nav_is_open = false">Justin Lin</router-link>
+      <router-link class="nav-link" to="/larry-charles" @click.native="nav_is_open = false">Larry Charles</router-link>
+      <router-link class="nav-link" to="/matt-ogens" @click.native="nav_is_open = false">Matt Ogens</router-link>
+      <router-link class="nav-link" to="/peyton-wilson" @click.native="nav_is_open = false">Peyton Wilson</router-link>
     </nav>
 
     <div class="overlay" :class="{ 'nav-open': nav_is_open }">
