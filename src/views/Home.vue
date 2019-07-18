@@ -32,5 +32,10 @@ export default {
     font-size: 72px;
     padding-top: $pad*3;
   }
+
+  @include bp(4) {
+    font-size: 80px;
+    padding-top: $pad*4;
+  }
 }
 </style>
