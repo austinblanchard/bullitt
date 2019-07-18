@@ -1,7 +1,7 @@
 <template>
   <div class="talent-list">
 
-    <router-link class="talent-link anderson-wright" :to="{ name: 'talent', params: { talentSlug: 'fox' }}">
+    <router-link class="talent-link anderson-wright" :to="{ name: 'talent', params: { talentSlug: 'anderson-wright' }}">
       <span>Anderson Wright</span>
     </router-link>
 
@@ -37,16 +37,8 @@
 </template>
 
 <script>
-import talents from '../talent.json'
-
 export default {
   name: 'TalentList',
-
-  data () {
-    return {
-      talent: talents.find(talent => talent.slug === this.$route.params.talentSlug)
-    }
-  }
 
 }
 </script>

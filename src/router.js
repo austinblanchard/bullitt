@@ -24,7 +24,7 @@ export default new Router({
     {
       // path: '/work/:clientSlug', if later need a work page
       path: '/:talentSlug',
-      name: 'Talent',
+      name: 'talent',
       // component: Projects
       component: () => import(/* webpackChunkName: "client" */ './views/TalentDetail.vue')
     }
