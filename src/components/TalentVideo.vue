@@ -3,7 +3,9 @@
 
     <div class="video-relative-wrapper">
       <div class="talent-name">Talent <span>{{ talent.name }}</span></div>
-      <router-link class="close" to="/">X</router-link>
+      <router-link class="close" to="/">
+        <svgicon icon="close" />
+      </router-link>
 
       <vimeo-player
           class="vimeo"
@@ -24,6 +26,7 @@
 
 <script>
 import talents from '@/talent.json'
+import '@/compiled-icons'
 
 export default {
   name: 'TalentVideo',
@@ -83,11 +86,17 @@ export default {
   margin: $pad 0;
   transition: transform 250ms ease;
 
+  svg {
+    color: $white;
+    height: 20px;
+    width: 20px;
+  }
+
   @include bp(4) {
     // this moves the text into the middle of the edge, rotates it -90deg from the center point, and also positions it vertically centered
     transform: translateY(-50%) translateX(-50%) rotate(-90deg);
     position: absolute;
-    right: -50px;
+    right: -60px;
     top: 50%;
 
     visibility: hidden;
