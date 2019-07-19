@@ -17,9 +17,9 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../sass/_typography.scss";
-@import "../sass/_variables.scss";
-@import "../sass/_breakpoints.scss";
+@import "@/sass/_typography.scss";
+@import "@/sass/_variables.scss";
+@import "@/sass/_breakpoints.scss";
 
 .title {
   @include gt-super();

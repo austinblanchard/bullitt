@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import talents from '../talent.json'
+import talents from '@/talent.json'
 
 export default {
   name: 'TalentVideo',
@@ -37,9 +37,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../sass/_breakpoints.scss";
-@import "../sass/_variables.scss";
-@import "../sass/_typography.scss";
+@import "@/sass/_breakpoints.scss";
+@import "@/sass/_variables.scss";
+@import "@/sass/_typography.scss";
 
 .talent-video {
   @include bp(3) {
