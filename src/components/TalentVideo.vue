@@ -56,6 +56,7 @@ export default {
   color: $gray;
   text-align: center;
   margin-top: $pad;
+  margin-left: 5px;
 
   span {
     color: $white;
@@ -76,6 +77,7 @@ export default {
   text-transform: uppercase;
   text-align: center;
   margin: $pad 0;
+  transition: transform 250ms ease;
 
   @include bp(4) {
     // this moves the text into the middle of the edge, rotates it -90deg from the center point, and also positions it vertically centered
@@ -89,6 +91,10 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:hover {
+      transform: scale(1.05) translateY(-50%) translateX(-50%) rotate(-90deg);
+    }
 
     &:after {
       content:'CLOSE';

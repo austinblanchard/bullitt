@@ -175,6 +175,10 @@ body {
       color: $gray;
     }
 
+    &:hover {
+      color: $gray;
+    }
+
     @include bp(2) {
       font-size: 24px;
     }

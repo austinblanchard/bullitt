@@ -18,5 +18,8 @@ export default new Router({
       name: 'talent',
       component: () => import(/* webpackChunkName: "talent" */ './views/TalentDetail.vue')
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
 })
