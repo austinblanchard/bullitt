@@ -1,6 +1,6 @@
 <template>
   <div class="talent-detail">
-    <TalentVideo />
+    <TalentVideo :key="componentKey"/>
   </div>
 </template>
 
@@ -11,6 +11,18 @@ export default {
   name: 'TalentDetail',
   components: {
     TalentVideo
+  },
+
+  data() {
+    return {
+      componentKey: 0,
+    };
+  },
+
+  methods: {
+    forceRerender() {
+      this.componentKey += 1;  
+    }
   }
 }
 </script>
