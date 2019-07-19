@@ -48,19 +48,15 @@ export default {
 
 html,
 body {
+  background: $black;
   height: 100%;
 }
 
-body {
-  background: $black;
-}
-
 #app {
-  position: relative;
-  overflow: hidden;
-  min-height: 100%;
   color: $white;
+  overflow: hidden;
 
+  // disable scrolling on nav menu open
   &.nav-open {
     height: 100%;
     overflow-y: hidden;
@@ -70,8 +66,8 @@ body {
 #nav {
   @include franklin();
   font-weight: 600;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
 
   .nav-title {
     padding: $pad;
@@ -150,7 +146,6 @@ body {
   text-align: right;
   padding-right: $pad*4;
   background: transparent;
-
   position: absolute;
   top: 0;
   right: -100%;
@@ -210,6 +205,7 @@ body {
   }
 }
 
+// dark overlay when side nav open
 .overlay.nav-open {
   position: relative;
   height: 100%;

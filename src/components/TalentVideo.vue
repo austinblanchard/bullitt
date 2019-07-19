@@ -1,26 +1,25 @@
 <template>
   <div class="talent-video">
-
     <div class="video-relative-wrapper">
       <div class="talent-name">Talent <span>{{ talent.name }}</span></div>
+
       <router-link class="close" to="/">
         <svgicon icon="close" />
       </router-link>
 
       <vimeo-player
-          class="vimeo"
-          ref="player"
-          :options="{ responsive: true }"
-          :video-id="talent.video"
-          :autoplay="true"
-        ></vimeo-player>
+        class="vimeo"
+        ref="player"
+        :options="{ responsive: true }"
+        :video-id="talent.video"
+        :autoplay="true"
+      ></vimeo-player>
     </div>
 
     <div class="meta">
       <h2>{{ talent.title }}</h2>
       <h3>{{ talent.subtitle }}</h3>
     </div>
-
   </div>
 </template>
 
@@ -30,7 +29,7 @@ import '@/compiled-icons'
 
 export default {
   name: 'TalentVideo',
-
+  // matches talentSlug value passed from the TalentList router-link to provide selected JSON data
   data () {
     return {
       talent: talents.find(talent => talent.slug === this.$route.params.talentSlug)
@@ -55,8 +54,8 @@ export default {
 
 .talent-name {
   @include franklin();
-  text-transform: uppercase;
   color: $gray;
+  text-transform: uppercase;
   text-align: center;
   margin-top: $pad;
 
@@ -70,7 +69,7 @@ export default {
   }
 
   @include bp(4) {
-    // this moves the text into the middle of the edge, rotates it -90deg from the center point, and also positions it vertically centered
+    // moves text to the middle of the edge, rotates it -90deg from the center point, and vertically centers
     transform: translateY(-50%) translateX(-50%) rotate(-90deg);
     position: absolute;
     left: -37px;
@@ -93,17 +92,16 @@ export default {
   }
 
   @include bp(4) {
-    // this moves the text into the middle of the edge, rotates it -90deg from the center point, and also positions it vertically centered
     transform: translateY(-50%) translateX(-50%) rotate(-90deg);
     position: absolute;
     right: -60px;
     top: 50%;
-
+    // hide close svg after small screens, show close text for larger screens
     visibility: hidden;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 
     &:hover {
       transform: scale(1.05) translateY(-50%) translateX(-50%) rotate(-90deg);
