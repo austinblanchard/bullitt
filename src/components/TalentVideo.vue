@@ -56,10 +56,14 @@ export default {
   color: $gray;
   text-align: center;
   margin-top: $pad;
-  margin-left: 5px;
 
   span {
     color: $white;
+    margin-left: 3px;
+
+    @include bp(4) {
+      margin-left: 5px;
+    }
   }
 
   @include bp(4) {
