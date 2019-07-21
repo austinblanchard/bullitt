@@ -1,6 +1,6 @@
 # Bullitt - Job Exercise
-Austin Blanchard
-Austinpdx@gmail.com
+Austin Blanchard  
+Austinpdx@gmail.com  
 http://www.austinpdx.com
 
 ## Project setup
