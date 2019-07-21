@@ -60,6 +60,8 @@ body {
 }
 
 #app {
+  // relative for side nav
+  position: relative;
   color: $white;
   overflow: hidden;
 
