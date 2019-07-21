@@ -1,6 +1,7 @@
 <template>
   <div class="talent-detail">
-    <TalentVideo :key="componentKey"/>
+    <!-- when key value is updated, component wil re-render with new video -->
+    <TalentVideo :key="this.$store.state.count"/>
   </div>
 </template>
 
@@ -11,18 +12,6 @@ export default {
   name: 'TalentDetail',
   components: {
     TalentVideo
-  },
-
-  data() {
-    return {
-      componentKey: 0,
-    };
-  },
-
-  methods: {
-    forceRerender() {
-      this.componentKey += 1;  
-    }
   }
 }
 </script>
