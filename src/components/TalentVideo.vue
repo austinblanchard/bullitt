@@ -155,11 +155,15 @@ h3 {
 }
 
 .video-relative-wrapper {
-  max-width: 1400px;
+  max-width: 1050px;
   margin: 0 auto;
 
   @include bp(4) {
     position: relative;
+  }
+
+  @include bp(6) {
+    max-width: 1400px;
   }
 }
 </style>
