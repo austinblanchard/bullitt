@@ -79,6 +79,7 @@ body {
   text-align: center;
 
   .nav-title {
+    display: inline-block;
     padding: 26px $pad $pad;
     font-size: 24px;
 
