@@ -57,7 +57,7 @@ export default {
   color: $gray;
   text-transform: uppercase;
   text-align: center;
-  margin-top: $pad;
+  padding-top: $pad;
 
   span {
     color: $white;
@@ -74,7 +74,7 @@ export default {
     position: absolute;
     left: -37px;
     top: 50%;
-    margin-top: 0;
+    padding-top: 0;
   }
 }
 

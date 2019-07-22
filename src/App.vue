@@ -79,7 +79,7 @@ body {
   text-align: center;
 
   .nav-title {
-    padding: $pad;
+    padding: 26px $pad $pad;
     font-size: 24px;
 
     @include bp(2) {
